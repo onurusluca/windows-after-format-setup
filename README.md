@@ -1,18 +1,42 @@
 # My Windows 10/11 After Format Setup and Settings
 
+- Mouse sensitivity settings
+- Updates, restart
+- Change to dark mode
+- Customization, wallpaper etc.
+- Remove unnecessary apps
+- Add browser
+- Night light setting
+- Scaling and font size
+- Power mode
+- Clean after format files
+- Disable all options on privacy
+- Show file extensions and hidden files
+- Clean startup menu
+- Restart
+- Update from store
+- Add Windows PowerToys
+- Install GPU Drivers
+- Browser settings are automatic
 
+## Development Environment
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+### Windows Terminal
 
+- Set WT as default
+- Download ohmyposh from Microsoft Store
+- Add MesloLGM NF font
+- New-Item -Path $PROFILE -Type File -Force
+- notepad $PROFILE
+- Add: `oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/spaceship.omp.json" | Invoke-Expression [NetServicePointManager]::SecurityProtocol = [NetServicePointManager]::SecurityProtocol -bor [NetSecurityProtocolType]::Tls12`
+- If below error then open PowerShell as admin and run this code: `Set-ExecutionPolicy RemoteSigned`
+    > cannot be loaded because running scripts is disabled on this system
 
-
-## Create files and folders
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+- User WSL: <https://www.groovypost.com/howto/install-windows-subsystem-for-linux-in-windows-11/>
+- Add Vscode, sign in settings are automatic
+- <https://nodejs.org/en/> restart, node -v, npm -v if problem: add env variables path+ C:\Program Files\nodejs
+- npm install -g pnpm
+- Install GIT <https://git-scm.com/> add to path C:\Program Files\Git\cmd C:\Program Files\Git\bin
+- Enter identity info:
+  - git config --global user.email 'email'
+  - git config --global user.name 'username'
