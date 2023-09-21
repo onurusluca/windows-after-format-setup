@@ -1,5 +1,7 @@
 # My Windows 10/11 After Format Setup and Settings
 
+## General Stuff
+
 - Mouse sensitivity settings
 - Updates, restart
 - Change to dark mode
